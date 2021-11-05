@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     Button chonbai,play,pause;
     TextView tenbai,idbai,thoigian;
     String ID="",name="",tmp="";
@@ -27,18 +27,20 @@ public class MainActivity extends AppCompatActivity {
         tenbai=findViewById(R.id.tenbai);
         idbai=findViewById(R.id.idbai);
         thoigian=findViewById(R.id.time);
-        if(getIntent().getExtras().get("ID")!=null){
+        if(getIntent().getExtras()!=null){
             ID=getIntent().getExtras().get("ID").toString();
             name=getIntent().getExtras().get("name").toString();
             tmp=getIntent().getExtras().get("path").toString();
+            path=Integer.parseInt(tmp);
+            mediaPlayer= MediaPlayer.create(this,path);
+            int time=mediaPlayer.getDuration()/1000;
+            int phut=time/60;
+            int giay=time%60;
+            thoigian.setText(phut+":"+giay);
+        }
 
-        }
-        else {
-            tmp="";
-            ID="";
-            name="";
-        }
-        path=Integer.parseInt(tmp);
+
+
 
         if(!ID.equals("")){
             idbai.setText("bai so "+ID);
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         play.setOnClickListener(v->{
             if(!ID.equals("")){
                 Toast.makeText(MainActivity.this,tmp,Toast.LENGTH_SHORT).show();
-                mediaPlayer= MediaPlayer.create(this,path);
+
                 mediaPlayer.start();
             }
             else{
