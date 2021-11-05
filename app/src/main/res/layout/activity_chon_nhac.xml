@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChonNhacActivity">
+    <TextView
+        android:id="@+id/baiso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Bai so"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/idbai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baiso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="chua chon"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thanh2"
+
+        >
+        <Button
+            android:id="@+id/bai1"
+            android:layout_width="120dp"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="1"
+            />
+        <Button
+        android:id="@+id/bai2"
+        android:layout_width="120dp"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="2"/>
+        <Button
+            android:id="@+id/bai3"
+            android:layout_width="120dp"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="3"
+            />
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thanh2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/thanh3"
+        >
+        <Button
+            android:id="@+id/bai4"
+            android:layout_width="120dp"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="4"
+            />
+        <Button
+            android:id="@+id/bai5"
+            android:layout_width="120dp"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thanh3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chon"
+        >
+        <Button
+            android:id="@+id/bai6"
+            android:layout_width="150dp"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:text="6"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/chon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Chon"
+
+        ></Button>
+</RelativeLayout>

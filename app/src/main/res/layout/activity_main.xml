@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Nghe nhac"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/idbai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="id bai nhac"
+        android:textSize="50dp" />
+    <TextView
+        android:id="@+id/tenbai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ten bai"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/idbai"
+
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tenbai"
+        android:layout_alignParentRight="true"
+        android:text="thoi gian"
+        android:textSize="20dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    >
+        <Button
+            android:id="@+id/chonbai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chon bai"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+        />
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pause"
+            />
+    </LinearLayout>
+</RelativeLayout>
