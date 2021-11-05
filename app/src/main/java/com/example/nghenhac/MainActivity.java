@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity  {
 
         play.setOnClickListener(v->{
             if(!ID.equals("")){
-                Toast.makeText(MainActivity.this,tmp,Toast.LENGTH_SHORT).show();
 
                 mediaPlayer.start();
             }

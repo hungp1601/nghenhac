@@ -36,7 +36,6 @@ public class ChonNhacActivity extends AppCompatActivity {
         chon.setOnClickListener(v->{
             if(check){
                 Intent intent=new Intent(ChonNhacActivity.this,MainActivity.class);
-                Toast.makeText(this,String.valueOf(uri),Toast.LENGTH_SHORT).show();
                 intent.putExtra("name",name);
                 intent.putExtra("ID",ID.getText().toString());
                 intent.putExtra("path",String.valueOf(uri));
