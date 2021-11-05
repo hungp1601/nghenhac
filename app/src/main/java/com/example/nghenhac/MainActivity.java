@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         }
         path=Integer.parseInt(tmp);
 
-
         if(!ID.equals("")){
             idbai.setText("bai so "+ID);
             tenbai.setText(name);
@@ -56,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             if(!ID.equals("")){
                 Toast.makeText(MainActivity.this,tmp,Toast.LENGTH_SHORT).show();
                 mediaPlayer= MediaPlayer.create(this,path);
+                mediaPlayer.start();
             }
             else{
                 Toast.makeText(MainActivity.this,"hay chon bai",Toast.LENGTH_SHORT).show();
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
             if(!ID.equals("")){
 
-                mediaPlayer.pause();
+                mediaPlayer.stop();
 
             }
             else{
